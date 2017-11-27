@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -40,7 +40,7 @@
           <form action="" class="brief-form">
             <div class="brief-slider">
 
-              <div class="brief-slide" id="slide-1">
+              <div class="brief-slide active" id="slide-1">
                 <h2 class="brief-slide__title">
                   1 Общая информация
                 </h2>
@@ -48,15 +48,8 @@
                 <div class="brief-form__items form__items">
                   <div class="flex-container">
                     <div class="form__item">
-                      <label for="company">
-                        - Полное название компании и адрес сайта (если есть) <span class="highlight">*</span>
-                      </label>
-                      <textarea name="company" class="form__field" id="company"></textarea>
-                    </div><!-- .form__item end -->
-
-                    <div class="form__item">
-                      <label for="days">
-                        - Каковы планируемые сроки проекта? <span class="highlight">*</span>
+                      <label for="days" class="require">
+                        - Каковы планируемые сроки проекта?
                       </label>
                       <input type="text" name="days" class="form__days" id="days">
                       <span>дней</span>
@@ -69,38 +62,113 @@
                         <div class="range-control"></div>
 
                         <span class="title-min">от 1 дня</span>
-                        <span class="title-min">
+                        <span class="title-max">
                           до месяца<br>
                           и больше
                         </span>
                       </div>
                     </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <label for="company" class="require">
+                        - Полное название компании и адрес сайта (если есть)
+                      </label>
+                      <textarea name="company" class="form__field" id="company"></textarea>
+                    </div><!-- .form__item end -->
                   </div><!-- .flex-container end -->
 
                   <div class="flex-container">
                     <div class="form__item">
-                      <label for="form__contacts">
-                        Контактные данные
-                      </label>
-                      <textarea name="contacts" class="form__field" id="form__contacts"></textarea>
-                    </div><!-- .form__item end -->
-
-                    <div class="form__item form__item--input">
-                      <label for="form__name">
+                      <label for="name" class="require">
                         Имя контактного лица
                       </label>
-                      <input type="text" name="name" class="form__field--input" id="form__name">
+                      <input type="text" name="name" class="form__field--input" id="name">
+                    </div><!-- .form__item end -->
+                    
+                    <div class="form__item">
+                      <label for="contacts" class="require">
+                        Контактные данные
+                      </label>
+                      <textarea name="contacts" class="form__field" id="contacts"></textarea>
                     </div><!-- .form__item end -->
                   </div><!-- .flex-container end -->
-
                 </div><!-- .brief-form__items end -->
               </div><!-- .brief-slide slide-1 end -->
 
-              
+              <div class="brief-slide" id="slide-2">
+                <h2 class="brief-slide__title">
+                  2 Информация о компании
+                </h2>
+
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-2 end -->
+
+              <div class="brief-slide" id="slide-3">
+                <h2 class="brief-slide__title">
+                  3 Целевая аудитория
+                </h2>
+
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-3 end -->
+
+              <div class="brief-slide" id="slide-4">
+                <h2 class="brief-slide__title">
+                  4 Постановка задачи
+                </h2>
+
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-4 end -->
+
+              <div class="brief-slide" id="slide-5">
+                <h2 class="brief-slide__title">
+                  5 Содержание сайта
+                </h2>
+
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-5 end -->
+
+              <div class="brief-slide" id="slide-6">
+                <h2 class="brief-slide__title">
+                  6 Дизайн
+                </h2>
+
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-6 end -->
 
               <div class="brief-slider__controls slider__controls">
-                <button type="button" class="slider-controls--prev">Назад</button>
-                <button type="button" class="slider-controls--next">Далее</button>
+                <button type="submit" class="btn" name="feedback"></button>
+                <button type="button" class="btn slider-controls--prev">Назад</button>
+                <button type="button" class="btn slider-controls--next">Далее</button>
               </div><!-- .brief-slider__controls end -->
             </div><!-- .brief-slider end -->
           </form>
