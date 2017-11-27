@@ -14,19 +14,19 @@
     <div class="page">
       <header class="page-header">
         <div class="wrapper">
-          <div class="page-header__content">
+          <div class="page-header__text">
             <h1 class="page-header__title">
-              Бриф <strong>технического задания</strong> для <strong>вашего</strong> сайта
+              Бриф <b>технического задания</b> для <b>вашего</b> сайта
             </h1>
             
             <p class="page-header__subtitle">
               Заполните ниже представленную <b>форму</b>. Если в <b>чём-то</b> вы не уверены, <b>пропустите</b>
             </p>
             
-            <p class="page-header__desc">
+            <p class="page-header__desc highlight">
               * обязательно к заполнению
             </p>
-          </div><!-- .page-header__content end -->
+          </div><!-- .page-header__text end -->
 
           <div class="logo">
             <img src="images/logo.png" alt="Crazy Studio logo">
@@ -37,45 +37,66 @@
       <!-- start .brief -->
       <section class="brief">
         <div class="wrapper">
-          <form action="#" method="post" class="brief-form">
+          <form action="" class="brief-form">
             <div class="brief-slider">
-              <div class="brief-slide">
+
+              <div class="brief-slide" id="slide-1">
                 <h2 class="brief-slide__title">
                   1 Общая информация
                 </h2>
 
                 <div class="brief-form__items form__items">
-                  <div class="form__item">
-                    <label for="form__company">
-                      - Полное название компании и адрес сайта (если есть) *
-                    </label>
-                    <textarea name="company" class="form__field" id="form__company"></textarea>
-                  </div><!-- .form__item end -->
+                  <div class="flex-container">
+                    <div class="form__item">
+                      <label for="company">
+                        - Полное название компании и адрес сайта (если есть) <span class="highlight">*</span>
+                      </label>
+                      <textarea name="company" class="form__field" id="company"></textarea>
+                    </div><!-- .form__item end -->
 
-                  <div class="form__item form__item--range">
-                    <label for="form__days">
-                      - Каковы планируемые сроки проекта? *
-                    </label>
-                    <input type="text" name="days" class="form__days" id="form__days">
-                    <input class="form__days-range" type="range" value="0" min="0" max="30">
-                  </div>
+                    <div class="form__item">
+                      <label for="days">
+                        - Каковы планируемые сроки проекта? <span class="highlight">*</span>
+                      </label>
+                      <input type="text" name="days" class="form__days" id="days">
+                      <span>дней</span>
 
-                  <div class="form__item">
-                    <label for="form__contacts">
-                      Контактные данные
-                    </label>
-                    <textarea name="contacts" class="form__field" id="form__contacts"></textarea>
-                  </div><!-- .form__item end -->
+                      <div class="range">
+                        <div class="range-scale">
+                          <div class="range-bar"></div>
+                        </div>
 
-                  <div class="form__item form__item--input">
-                    <label for="form__name">
-                      Имя контактного лица
-                    </label>
-                    <input type="text" name="name" class="form__field--input" id="form__name">
-                  </div><!-- .form__item end -->
+                        <div class="range-control"></div>
+
+                        <span class="title-min">от 1 дня</span>
+                        <span class="title-min">
+                          до месяца<br>
+                          и больше
+                        </span>
+                      </div>
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+
+                  <div class="flex-container">
+                    <div class="form__item">
+                      <label for="form__contacts">
+                        Контактные данные
+                      </label>
+                      <textarea name="contacts" class="form__field" id="form__contacts"></textarea>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item form__item--input">
+                      <label for="form__name">
+                        Имя контактного лица
+                      </label>
+                      <input type="text" name="name" class="form__field--input" id="form__name">
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+
                 </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-1 end -->
 
-              </div><!-- .brief-slide end -->
+              
 
               <div class="brief-slider__controls slider__controls">
                 <button type="button" class="slider-controls--prev">Назад</button>
