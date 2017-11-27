@@ -1,0 +1,8 @@
+*.zip
+*.txt
+*.psd
+*.doc
+*.docx
+/psd/*
+/node_modules/*
+/sources/*
