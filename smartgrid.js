@@ -3,18 +3,14 @@ const smartgrid = require('smart-grid');
 const settings = {
   filename: "_smart-grid",
   outputStyle: 'scss', /* less || scss || sass || styl */
-  columns: 18,
-  offset: '20px',
+  columns: 8,
+  offset: '0px',
   container: {
-    maxWidth: '1280px',
+    maxWidth: '1240px',
     fields: '20px'
   },
   oldSizeStyle: false,
   breakPoints: {
-    lg: {
-      'width': '1200px',
-      'fields': '20px'
-    },
     md: {
       'width': '992px',
       'fields': '20px'
