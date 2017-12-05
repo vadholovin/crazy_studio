@@ -312,6 +312,26 @@ textarea.form__field--small-mt {
   width: 100%;
 }
 
+#slide-1 .slider-controls--prev,
+#slide-6 .slider-controls--next {
+  cursor: not-allowed;
+}
+
+.slider-controls--prev .btn:disabled,
+.slider-controls--next .btn:disabled {
+  background-color: mix(#000, $color-bkg-light, 30%);
+  color: #919191;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: mix(#000, $color-bkg-light, 30%);
+    background-color: mix(#000, $color-bkg-light, 30%);
+    color: #919191;
+    cursor: not-allowed;
+  }
+}
+
 .require::after {
   content: "*";
   font-size: inherit;
