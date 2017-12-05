@@ -313,15 +313,33 @@ textarea.form__field--small-mt {
   color: $color-accent;
 }
 
-.btn[name="feedback"] {
+.btn-submit {
   display: block;
   width: 100%;
   margin-top: 16px;
   visibility: hidden;
+  font-size: 25px;
+  // text-transform: uppercase;
+  border-color: $color-foreground;
+  background-color: $color-foreground;
+
+  &:hover,
+  &:active {
+    background-color: mix(#000, $color-foreground, 10%);
+    border-color: mix(#000, $color-foreground, 10%);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: mix(#fff, $color-foreground, 10%);
+  }
 }
 
 .active {
   display: block;
-  transition: display 0.8s ease;
 }
 
+
+#slide-6.active + .slider__controls .btn-submit {
+  visibility: visible;
+}

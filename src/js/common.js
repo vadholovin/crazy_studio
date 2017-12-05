@@ -9,6 +9,8 @@
 
   prev.addEventListener("click", function(e) {
     plusDivs(-1);
+
+
   });
 
   next.addEventListener("click", function(e) {
@@ -21,13 +23,17 @@
 
   function showDivs(n) {
     var x = document.querySelectorAll(".brief-slide");
+    var submit = document.querySelector("#submit");
+
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length}
     for (var i = 0; i < x.length; i++) {
         x[i].classList.remove("active"); 
     }
-    x[slideIndex-1].classList.add("active"); 
+    x[slideIndex-1].classList.add("active");
   }
+
+
 })();
 
 $(document).ready(function() {
