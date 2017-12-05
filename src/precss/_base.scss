@@ -1,0 +1,55 @@
+// ========================================
+// BASE
+// ========================================
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: $color-bkg-dark;
+}
+
+body {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 40px;
+  color: #fff;
+
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.highlight {
+  color: $color-accent;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 4px 24px;
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid $color-bkg-light;
+  background-color: $color-bkg-light;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:active {
+    background-color: $color-foreground;
+    border-color: $color-foreground;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-foreground;
+  }
+}
