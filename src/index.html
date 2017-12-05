@@ -7,8 +7,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="feedback/css/jquery.jgrowl.css">
+    <link rel="stylesheet" href="feedback/css/jquery.arcticmodal.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -41,7 +42,7 @@
       <!-- start .brief -->
       <section class="brief">
         <div class="wrapper">
-          <form action="" class="brief-form" id="brief-form">
+          <form action="" class="brief-form" id="brief-form" name="form-1" method="get">
             <div class="brief-slider">
               
               <div class="brief-slide active" id="slide-1">
@@ -126,7 +127,7 @@
                     
                     <div class="form__item">
                       <label for="info-notes" class="form__item-title">
-                        - Примечания
+                        - Примечания:
                       </label>
                       <textarea name="info-notes" class="form__field" id="info-notes"></textarea>
                     </div><!-- .form__item end -->
@@ -184,7 +185,7 @@
                   <div class="flex-container">
                     <div class="form__item">
                       <div class="form__item-title require">
-                        - Должны ли мы сами определить целевую аудиторию?
+                        - Укажите, какой тип сайта вам требуется.
                       </div>
                       <div class="input-items input-items--big-stack">
                         <div class="input-item">
@@ -257,14 +258,14 @@
                       <div class="input-items">
                         <div class="input-item">
                           <label class="input-item__text">
-                            <input class="input-item__radio" type="radio" name="other-language" value="да" checked>
+                            <input class="input-item__radio" type="radio" name="other-language" value="да">
                             <div class="input-item__indicator input-item__indicator--radio"></div>
                             Да
                           </label>
                         </div>
                         <div class="input-item">
                           <label class="input-item__text">
-                            <input class="input-item__radio" type="radio" name="other-language" value="нет">
+                            <input class="input-item__radio" type="radio" name="other-language" value="нет" checked>
                             <div class="input-item__indicator input-item__indicator--radio"></div>
                             Нет
                           </label>
@@ -319,14 +320,14 @@
                       <div class="input-items">
                         <div class="input-item">
                           <label class="input-item__text">
-                            <input class="input-item__radio" type="radio" name="create-logo" value="да" checked>
+                            <input class="input-item__radio" type="radio" name="create-logo" value="да">
                             <div class="input-item__indicator input-item__indicator--radio"></div>
                             Да
                           </label>
                         </div>
                         <div class="input-item">
                           <label class="input-item__text">
-                            <input class="input-item__radio" type="radio" name="create-logo" value="нет">
+                            <input class="input-item__radio" type="radio" name="create-logo" value="нет" checked>
                             <div class="input-item__indicator input-item__indicator--radio"></div>
                             Нет
                           </label>
@@ -336,14 +337,14 @@
 
                     <div class="form__item">
                       <label for="cool-design" class="form__item-title require">
-                        - Укажите адреса сайтов, дизайн которых вам нравится (не обязательно компаний из вашей индустрии).
+                        - Укажите адреса сайтов, дизайн которых вам нравится (не обязательно компаний из вашей индустрии)
                       </label>
                       <textarea name="cool-design" class="form__field" id="cool-design"></textarea>
                     </div><!-- .form__item end -->
 
                     <div class="form__item">
                       <label for="shit-design" class="form__item-title">
-                        - Укажите адреса сайтов, дизайн которых вам НЕ нравятся (необязательно компаний из вашей индустрии).
+                        - Укажите адреса сайтов, дизайн которых вам НЕ нравятся (необязательно компаний из вашей индустрии)
                       </label>
                       <textarea name="shit-design" class="form__field" id="shit-design"></textarea>
                     </div><!-- .form__item end -->
@@ -364,7 +365,7 @@
 
                     <div class="form__item">
                       <label for="design-notes" class="form__item-title">
-                        - Примечания.
+                        - Примечания:
                       </label>
                       <textarea name="design-notes" class="form__field" id="design-notes"></textarea>
                     </div><!-- .form__item end -->
@@ -381,22 +382,28 @@
 
               <div class="brief-slider__controls slider__controls">
                 <div class="slider__controls-container">
-                  <a href="#brief-form" class="btn slider-controls--prev">Назад</a>
-                  <a href="#brief-form" class="btn slider-controls--next">Далее</a>
-                  <button type="submit" class="btn btn-submit" name="feedback" id="submit">Отправить</button>
+                  <a href="#brief-form" class="slider-controls--prev">
+                    <button class="btn" type="button">Назад</button>
+                  </a>
+                  <a href="#brief-form" class="slider-controls--next">
+                    <button class="btn" type="button">Далее</button>
+                  </a>
+                  <button type="submit" class="btn btn-submit feedback" name="send" id="submit">Отправить</button>
                 </div>
               </div><!-- .brief-slider__controls end -->
             </div><!-- .brief-slider end -->
           </form>
-          
         </div><!-- .wrapper end -->
       </section><!-- .brief end -->
 
     </div><!-- .page end -->
     
-    <script src="js/vendor/jquery-1.x-git.min.js"></script>
-    <script src="js/vendor/PageScroll2id.min.js"></script>
-    <script src="js/vendor/rangeslider.min.js"></script>
+    <script src="js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="js/vendor/PageScroll2id.min.js"></script><!-- for scrolling to id -->
+    <script src="js/vendor/rangeslider.min.js"></script><!-- for range input -->
+    <script src="feedback/js/jquery.jgrowl.js"></script><!-- for feedback -->
+    <script src="feedback/js/jquery.arcticmodal.js"></script><!-- for feedback -->
+    <script src="feedback/js/feedback.js"></script><!-- for feedback -->
     <script src="js/common.js"></script>
   </body>
 </html>

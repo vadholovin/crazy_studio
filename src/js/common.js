@@ -42,6 +42,8 @@ $(document).ready(function() {
 
 });
 
+/*  */
+
 $(document).ready(function() {
   var $rangeslider = $('#js-amount-range');
   var $amount = $('#js-amount-days');
