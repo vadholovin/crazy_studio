@@ -111,6 +111,7 @@
   background-color: $color-bkg-light;
   border: 1px solid $color-bkg-light;
   outline: none;
+  overflow: auto;
 
   &:focus {
     border: 1px solid $color-accent;
@@ -313,7 +314,7 @@ textarea.form__field--small-mt {
 }
 
 #slide-1 .slider-controls--prev,
-#slide-6 .slider-controls--next {
+.last-slide .slider-controls--next {
   cursor: not-allowed;
 }
 
@@ -363,7 +364,7 @@ textarea.form__field--small-mt {
   display: block;
 }
 
-#slide-6.active + .slider__controls .btn-submit {
+.last-slide.active + .slider__controls .btn-submit {
   visibility: visible;
 }
 

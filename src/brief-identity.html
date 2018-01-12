@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Бриф технического задания фирменного стиля</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="feedback/css/jquery.jgrowl.css">
+    <link rel="stylesheet" href="feedback/css/jquery.arcticmodal.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <div class="wrapper">
+          <div class="flex-container">
+            <div class="page-header__text">
+              <h1 class="page-header__title">
+                Бриф <b>технического задания фирменного</b> стиля
+              </h1>
+              
+              <p class="page-header__subtitle">
+                Заполните ниже представленную <b>форму</b>.<br>
+                Если в <b>чём-то</b> вы не уверены, <b>пропустите</b>.
+              </p>
+              
+              <p class="page-header__desc highlight">
+                * обязательно к заполнению
+              </p>
+            </div><!-- .page-header__text end -->
+
+            <a class="logo" href="http://crazy.studio" target="_blank">
+              <img src="images/logo.png" alt="Crazy Studio logo">
+            </a>
+          </div><!-- .flex-container end -->
+        </div><!-- .wrapper end -->
+      </header>
+
+      <!-- start .brief -->
+      <section class="brief">
+        <div class="wrapper">
+          <form action="" class="brief-form" id="brief-form" name="form-2" method="get">
+            <div class="brief-slider">
+              
+              <div class="brief-slide active" id="slide-1">
+                <div class="brief-slide__title">
+                  <div class="brief-slide__title-bkg"></div>
+                  <h2>1 Общая информация</h2>
+                </div>
+                
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+                      <label for="days" class="form__item-title require">
+                        - Каковы планируемые сроки проекта?
+                      </label>
+                      
+                      <div class="form__field-container">
+                        <input type="text" name="days" class="form__field form__field--days" id="js-amount-days" min="0" max="30" placeholder="1">
+                        <span class="sup">дней</span>
+                      </div>
+
+                      <div class="range">
+                        <input type="range" id="js-amount-range" value="1" min="0" max="30">
+                        <span class="title-min">от 1 дня</span>
+                        <span class="title-max">
+                          до месяца<br>
+                          и больше
+                        </span>
+                      </div>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <label for="company" class="form__item-title require">
+                        - Полное название компании и адрес сайта (если есть)
+                      </label>
+                      <textarea name="company" class="form__field" id="company"></textarea>
+                    </div><!-- .form__item end -->
+                    <div class="form__item">
+                      <label for="name" class="form__item-title require">
+                        - Имя контактного лица
+                      </label>
+                      <input type="text" name="name" class="form__field form__field--input" id="name">
+                    </div><!-- .form__item end -->
+                    
+                    <div class="form__item">
+                      <label for="contacts" class="form__item-title require">
+                        - Контактные данные для связи
+                      </label>
+                      <textarea name="contacts" class="form__field" id="contacts"></textarea>
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-1 end -->
+
+              <div class="brief-slide" id="slide-2">
+                <div class="brief-slide__title">
+                  <div class="brief-slide__title-bkg"></div>
+                  <h2>2 Информация о компании</h2>
+                </div>
+
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+                      <label for="area" class="form__item-title require">
+                        - Укажите область деятельности компании, какие товары или услуги вы предлагаете?
+                      </label>
+                      <textarea name="area" class="form__field" id="area"></textarea>
+                    </div><!-- .form__item end -->
+                    
+                    <div class="form__item">
+                      <label for="differences" class="form__item-title">
+                        - Какие есть ключевые отличия от конкурентов, которые надо выделить?
+                      </label>
+                      <textarea name="differences" class="form__field" id="differences"></textarea>
+                    </div><!-- .form__item end -->
+                    
+                    <div class="form__item">
+                      <label for="competitors" class="form__item-title">
+                        - Укажите ссылки на сайты ваших прямых или косвенных конкурентов. 
+                        Оцените их фирменный стиль, укажите, что вам нравится, а что нет.
+                      </label>
+                      <textarea name="competitors" class="form__field" id="competitors"></textarea>
+                    </div><!-- .form__item end -->
+                    
+                    <div class="form__item">
+                      <label for="info-notes" class="form__item-title">
+                        - Примечания:
+                      </label>
+                      <textarea name="info-notes" class="form__field" id="info-notes"></textarea>
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-2 end -->
+
+              <div class="brief-slide" id="slide-3">
+                <div class="brief-slide__title">
+                  <div class="brief-slide__title-bkg"></div>
+                  <h2>3 Целевая аудитория</h2>
+                </div>
+
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+                      <div class="form__item-title require">
+                        - Должны ли мы сами определить целевую аудиторию?
+                      </div>
+                      <div class="input-items">
+                        <div class="input-item">
+                          <label class="input-item__text">
+                            <input class="input-item__radio" type="radio" name="is-target" value="да" checked>
+                            <div class="input-item__indicator input-item__indicator--radio"></div>
+                            Да
+                          </label>
+                        </div>
+                        <div class="input-item">
+                          <label class="input-item__text">
+                            <input class="input-item__radio" type="radio" name="is-target" value="нет">
+                            <div class="input-item__indicator input-item__indicator--radio"></div>
+                            Нет
+                          </label>
+                        </div>
+                      </div>
+                    </div><!-- .form__item end -->
+                    
+                    <div class="form__item">
+                      <label for="audience" class="form__item-title">
+                        - Если нет, опишите группы целевой аудитории. Укажите их характерные черты и особенности.
+                      </label>
+                      <textarea name="audience" class="form__field" id="audience"></textarea>
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-3 end -->
+
+              <div class="brief-slide" id="slide-4">
+                <div class="brief-slide__title">
+                  <div class="brief-slide__title-bkg"></div>
+                  <h2>4 Постановка задачи</h2>
+                </div>
+
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+                      <label for="task" class="form__item-title">
+                        - Какую задачу вы ставите перед нами?
+                      </label>
+                      <textarea name="task" class="form__field form__field--small-mt" id="task"></textarea>
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-4 end -->
+
+              <div class="brief-slide" id="slide-5">
+                <div class="brief-slide__title">
+                  <div class="brief-slide__title-bkg"></div>
+                  <h2>5 Содержание</h2>
+                </div>
+
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+                      <div class="form__item-title require">
+                        - Есть ли логотип?
+                      </div>
+                      <div class="input-items">
+                        <div class="input-item">
+                          <label class="input-item__text">
+                            <input class="input-item__radio" type="radio" name="logo" value="да" checked>
+                            <div class="input-item__indicator input-item__indicator--radio"></div>
+                            Да
+                          </label>
+                        </div>
+                        <div class="input-item">
+                          <label class="input-item__text">
+                            <input class="input-item__radio" type="radio" name="logo" value="нет">
+                            <div class="input-item__indicator input-item__indicator--radio"></div>
+                            Нет
+                          </label>
+                        </div>
+                      </div>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <div class="form__item-title">
+                        - Если есть, нужно ли вносить изменения в логотип?
+                      </div>
+                      <div class="input-items">
+                        <div class="input-item">
+                          <label class="input-item__text">
+                            <input class="input-item__radio" type="radio" name="edit-logo" value="да" checked>
+                            <div class="input-item__indicator input-item__indicator--radio"></div>
+                            Да
+                          </label>
+                        </div>
+                        <div class="input-item">
+                          <label class="input-item__text">
+                            <input class="input-item__radio" type="radio" name="edit-logo" value="нет">
+                            <div class="input-item__indicator input-item__indicator--radio"></div>
+                            Нет
+                          </label>
+                        </div>
+                      </div>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <label for="link-logo" class="form__item-title">
+                        - Если есть логотип, вставьте ссылку на него
+                      </label>
+                      <textarea name="link-logo" class="form__field" id="link-logo"></textarea>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <label for="identity-products" class="form__item-title require">
+                        - Перечислите на чём будет располагаться ваш фирменный стиль. 
+                        Например визитки, майки, бейджи, кружки и так далее.
+                      </label>
+                      <textarea name="identity-products" class="form__field" id="identity-products"></textarea>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <label for="content-notes" class="form__item-title">
+                        - Примечание
+                      </label>
+                      <textarea name="content-notes" class="form__field" id="content-notes"></textarea>
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-5 end -->
+
+              <div class="brief-slide last-slide" id="slide-6">
+                <div class="brief-slide__title">
+                  <div class="brief-slide__title-bkg"></div>
+                  <h2>6 Дизайн</h2>
+                </div>
+
+                <div class="brief-form__items form__items">
+                  <div class="flex-container">
+                    <div class="form__item">
+                      <label for="cool-design" class="form__item-title require">
+                        - Укажите примеры фирменных стилей, которые вам нравятся 
+                        (не обязательно компаний из вашей индустрии). 
+                        Вставьте ссылку
+                      </label>
+                      <textarea name="cool-design" class="form__field" id="cool-design"></textarea>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <label for="shit-design" class="form__item-title">
+                        - Укажите примеры фирменных стилей, которые вам НЕ нравятся 
+                        (не обязательно компаний из вашей индустрии). 
+                        Вставьте ссылку
+                      </label>
+                      <textarea name="shit-design" class="form__field" id="shit-design"></textarea>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <label for="design-effect" class="form__item-title">
+                        - Опишите впечатление, которое должен производить дизайн.
+                      </label>
+                      <textarea name="design-effect" class="form__field" id="design-effect"></textarea>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <div class="form__item-title">
+                        - Надо ли придерживаться текущего фирменного стиля (в случае редизайна)?
+                      </div>
+                      <div class="input-items">
+                        <div class="input-item">
+                          <label class="input-item__text">
+                            <input class="input-item__radio" type="radio" name="current-style" value="да" checked>
+                            <div class="input-item__indicator input-item__indicator--radio"></div>
+                            Да
+                          </label>
+                        </div>
+                        <div class="input-item">
+                          <label class="input-item__text">
+                            <input class="input-item__radio" type="radio" name="current-style" value="нет">
+                            <div class="input-item__indicator input-item__indicator--radio"></div>
+                            Нет
+                          </label>
+                        </div>
+                      </div>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <label for="design-notes" class="form__item-title">
+                        - Примечания:
+                      </label>
+                      <textarea name="design-notes" class="form__field" id="design-notes"></textarea>
+                    </div><!-- .form__item end -->
+
+                    <div class="form__item">
+                      <label for="design-additions" class="form__item-title">
+                        - Что еще мы должны знать?
+                      </label>
+                      <textarea name="design-additions" class="form__field" id="design-additions"></textarea>
+                    </div><!-- .form__item end -->
+                  </div><!-- .flex-container end -->
+                </div><!-- .brief-form__items end -->
+              </div><!-- .brief-slide slide-6 end -->
+
+              <div class="brief-slider__controls slider__controls">
+                <div class="slider__controls-container">
+                  <a href="#brief-form" class="slider-controls--prev">
+                    <button class="btn" type="button" id="btn-prev">Назад</button>
+                  </a>
+                  <a href="#brief-form" class="slider-controls--next">
+                    <button class="btn" type="button" id="btn-next">Далее</button>
+                  </a>
+                  <button type="submit" class="btn btn-submit feedback" name="send" id="submit">Отправить</button>
+                </div>
+              </div><!-- .brief-slider__controls end -->
+            </div><!-- .brief-slider end -->
+          </form>
+        </div><!-- .wrapper end -->
+      </section><!-- .brief end -->
+
+    </div><!-- .page end -->
+    
+    <script src="js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="js/vendor/PageScroll2id.min.js"></script><!-- for scrolling to id -->
+    <script src="js/vendor/rangeslider.min.js"></script><!-- for range input -->
+    <script src="feedback/js/jquery.jgrowl.js"></script><!-- for feedback -->
+    <script src="feedback/js/jquery.arcticmodal.js"></script><!-- for feedback -->
+    <script src="feedback/js/feedback.js"></script><!-- for feedback -->
+    <script src="js/common.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
    */
   var slideIndex = 1;
   var firstSlide = document.querySelector("#btn-prev");
-  var lastSlide = document.querySelector("#slide-6 #btn-next");
+  var lastSlide = document.querySelector(".last-slide #btn-next");
   var prev = document.querySelector("#btn-prev");
   var next = document.querySelector("#btn-next");
   showDivs(slideIndex);
