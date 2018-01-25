@@ -23,6 +23,10 @@ body {
   box-sizing: border-box;
 }
 
+.page {
+  position: relative;
+}
+
 .highlight {
   color: $color-accent;
 }
@@ -52,4 +56,24 @@ body {
     outline: none;
     border-color: $color-foreground;
   }
+}
+
+.is-hidden {
+  display: none;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.d-b {
+  display: block !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
 }
